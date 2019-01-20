@@ -1,0 +1,206 @@
+{
+    "ExploreIndiaData": {
+        "type": "object",
+        "objectId": "eiMetadata",
+        "backgroundImage": {
+            "contentDescription": null,
+            "smallSourceUrl": null,
+            "largeSourceUrl": null,
+            "sources": [
+                {
+                    "url": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/-hnnJox/visualization-of-bright-dots-moving-around-a-dark-background_n1l_mmuu__F0000.png",
+                    "size": "small",
+                    "widthPixels": 0,
+                    "heightPixels": 0
+                },
+                {
+                    "url": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/-hnnJox/visualization-of-bright-dots-moving-around-a-dark-background_n1l_mmuu__F0000.png",
+                    "size": "large",
+                    "widthPixels": 0,
+                    "heightPixels": 0
+                }
+            ]
+        },
+        "title": "Famous places in India."
+    },
+    "PlacesListData": {
+        "type": "list",
+        "listId": "eiListSample",
+        "totalNumberOfItems": 5,
+        "hintText": "Try, \"Alexa, select number 1\"",
+        "listPage": {
+            "listItems": [
+                {
+                	"listItemIdentifier": "delhi",
+                    "ordinalNumber": 1,
+                    "textContent": {
+                        "primaryText": {
+                            "type": "PlainText",
+                            "text": "Delhi"
+                        },
+                        "secondaryText": {
+                            "type": "PlainText",
+                            "text": "Capital of India"
+                        }
+                    },
+                    "image": {
+                        "contentDescription": null,
+                        "smallSourceUrl": null,
+                        "largeSourceUrl": null,
+                        "sources": [
+                            {
+                                "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Indiagate_(1).jpg",
+                                "size": "small",
+                                "widthPixels": 0,
+                                "heightPixels": 0
+                            },
+                            {
+                                "url": "http://www.worldfortravel.com/wp-content/uploads/2015/12/Grand-Red-Fort.jpg",
+                                "size": "large",
+                                "widthPixels": 0,
+                                "heightPixels": 0
+                            }
+                        ]
+                    },
+                    "token": "delhi"
+                },
+                {
+                	"listItemIdentifier": "udaipur",
+                    "ordinalNumber": 2,
+                    "textContent": {
+                        "primaryText": {
+                            "type": "PlainText",
+                            "text": "Udaipur"
+                        },
+                        "secondaryText": {
+                            "type": "PlainText",
+                            "text": "Also known as City of Lakes"
+                        }
+                    },
+                    "image": {
+                        "contentDescription": null,
+                        "smallSourceUrl": null,
+                        "largeSourceUrl": null,
+                        "sources": [
+                            {
+                                "url": "https://www.treebo.com/blog/wp-content/uploads/2016/07/Places-to-visit-in-udaipur_1.jpg",
+                                "size": "small",
+                                "widthPixels": 0,
+                                "heightPixels": 0
+                            },
+                            {
+                                "url": "https://farm2.staticflickr.com/1580/24313888376_5edb9b82e9_o.jpg",
+                                "size": "large",
+                                "widthPixels": 0,
+                                "heightPixels": 0
+                            }
+                        ]
+                    },
+                    "token": "udaipur"
+                },
+                {
+                	"listItemIdentifier": "mumbai",
+                    "ordinalNumber": 3,
+                    "textContent": {
+                        "primaryText": {
+                            "type": "PlainText",
+                            "text": "Mumbai"
+                        },
+                        "secondaryText": {
+                            "type": "RichText",
+                            "text": "Home of Bollywood"
+                        }
+                    },
+                    "image": {
+                        "contentDescription": null,
+                        "smallSourceUrl": null,
+                        "largeSourceUrl": null,
+                        "sources": [
+                            {
+                                "url": "https://i.huffpost.com/gen/4370552/images/o-MUMBAI-COASTLINE-facebook.jpg",
+                                "size": "small",
+                                "widthPixels": 0,
+                                "heightPixels": 0
+                            },
+                            {
+                                "url": "https://wonderfulengineering.com/wp-content/uploads/2016/01/Mumbai-wallpaper-13.jpg",
+                                "size": "large",
+                                "widthPixels": 0,
+                                "heightPixels": 0
+                            }
+                        ]
+                    },
+                    "token": "mumbai"
+                },
+                {
+					"listItemIdentifier": "chennai",
+                    "ordinalNumber": 4,
+                    "textContent": {
+                        "primaryText": {
+                            "type": "PlainText",
+                            "text": "Chennai"
+                        },
+                        "secondaryText": {
+                            "type": "RichText",
+                            "text": "Known for it's Beaches"
+                        }
+                    },
+                    "image": {
+                        "contentDescription": null,
+                        "smallSourceUrl": null,
+                        "largeSourceUrl": null,
+                        "sources": [
+                            {
+                                "url": "https://res.cloudinary.com/himanshujain/image/upload/v1450644842/activity/marina-beach_kilqy0.jpg",
+                                "size": "small",
+                                "widthPixels": 0,
+                                "heightPixels": 0
+                            },
+                            {
+                                "url": "https://inspirationseek.com/wp-content/uploads/2014/12/Chennai-Hotel-India.jpg",
+                                "size": "large",
+                                "widthPixels": 0,
+                                "heightPixels": 0
+                            }
+                        ]
+                    },
+                    "token": "chennai"
+                },
+                {
+                    "listItemIdentifier": "kolkata",
+                    "ordinalNumber": 5,
+                    "textContent": {
+                        "primaryText": {
+                            "type": "PlainText",
+                            "text": "Kolkata"
+                        },
+                        "secondaryText": {
+                            "type": "RichText",
+                            "text": "Known for its literary, artistic heritage"
+                        }
+                    },
+                    "image": {
+                        "contentDescription": null,
+                        "smallSourceUrl": null,
+                        "largeSourceUrl": null,
+                        "sources": [
+                            {
+                                "url": "https://skymetweather.com/content/wp-content/uploads/2014/11/15264118384bc4c72aec8f1.jpg",
+                                "size": "small",
+                                "widthPixels": 0,
+                                "heightPixels": 0
+                            },
+                            {
+                                "url": "https://im.proptiger.com/6/16/92/kolkata-heroshot-664497.jpeg",
+                                "size": "large",
+                                "widthPixels": 0,
+                                "heightPixels": 0
+                            }
+                        ]
+                    },
+                    "token": "kolkata"
+                }
+            ]
+        }
+    }
+}

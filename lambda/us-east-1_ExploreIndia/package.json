@@ -1,0 +1,11 @@
+{
+	"name": "ExploreIndia",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "vbhv",
+	"license": "ISC",
+	"dependencies": {
+		"ask-sdk-core": "^2.0.0",
+		"ask-sdk-model": "^1.0.0"
+	}
+}

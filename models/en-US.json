@@ -1,0 +1,182 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "explore india",
+      "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "SelectByNumberIntent",
+          "slots": [
+            {
+              "name": "ordinal",
+              "type": "ordinal"
+            },
+            {
+              "name": "cardinal",
+              "type": "cardinal"
+            }
+          ],
+          "samples": [
+            "{cardinal}",
+            "number {cardinal}",
+            "item {cardinal}",
+            "{cardinal} one",
+            "the {cardinal} one",
+            "the {cardinal} item",
+            "video {cardinal}",
+            "{cardinal} video",
+            "the {cardinal} video",
+            "{ordinal}",
+            "number {ordinal}",
+            "item {ordinal}",
+            "{ordinal} one",
+            "the {ordinal} one",
+            "the {ordinal} item",
+            "video {ordinal}",
+            "{ordinal} video",
+            "the {ordinal} video"
+          ]
+        },
+        {
+          "name": "IndianPlacesIntent",
+          "slots": [
+            {
+              "name": "place",
+              "type": "IndianPlaces"
+            }
+          ],
+          "samples": [
+            "I want to know about {place}",
+            "How does {place} look like",
+            "tell me about {place}",
+            "display {place}",
+            "show {place}",
+            "explore {place}"
+          ]
+        },
+        {
+          "name": "BeginIntent",
+          "slots": [],
+          "samples": [
+            "I am ready",
+            "let's explore India",
+            "show me some Indian places",
+            "start",
+            "begin"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "1st"
+              }
+            },
+            {
+              "name": {
+                "value": "2nd"
+              }
+            },
+            {
+              "name": {
+                "value": "3rd"
+              }
+            },
+            {
+              "name": {
+                "value": "4th"
+              }
+            },
+            {
+              "name": {
+                "value": "5th"
+              }
+            }
+          ],
+          "name": "ordinal"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "1"
+              }
+            },
+            {
+              "name": {
+                "value": "2"
+              }
+            },
+            {
+              "name": {
+                "value": "3"
+              }
+            },
+            {
+              "name": {
+                "value": "4"
+              }
+            },
+            {
+              "name": {
+                "value": "5"
+              }
+            }
+          ],
+          "name": "cardinal"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "kolkata"
+              }
+            },
+            {
+              "name": {
+                "value": "udaipur"
+              }
+            },
+            {
+              "name": {
+                "value": "chennai"
+              }
+            },
+            {
+              "name": {
+                "value": "mumbai"
+              }
+            },
+            {
+              "name": {
+                "value": "delhi"
+              }
+            }
+          ],
+          "name": "IndianPlaces"
+        }
+      ]
+    }
+  }
+}

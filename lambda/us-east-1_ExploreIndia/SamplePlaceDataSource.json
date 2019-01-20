@@ -1,0 +1,55 @@
+{
+    "bodyTemplate3Data": {
+        "type": "object",
+        "objectId": "bt3Sample",
+        "backgroundImage": {
+            "contentDescription": null,
+            "smallSourceUrl": null,
+            "largeSourceUrl": null,
+            "sources": [
+                {
+                    "url": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/-hnnJox/visualization-of-bright-dots-moving-around-a-dark-background_n1l_mmuu__F0000.png",
+                    "size": "small",
+                    "widthPixels": 0,
+                    "heightPixels": 0
+                },
+                {
+                    "url": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/-hnnJox/visualization-of-bright-dots-moving-around-a-dark-background_n1l_mmuu__F0000.png",
+                    "size": "large",
+                    "widthPixels": 0,
+                    "heightPixels": 0
+                }
+            ]
+        },
+        "title": "Delhi",
+        "image": {
+            "contentDescription": null,
+            "smallSourceUrl": null,
+            "largeSourceUrl": null,
+            "sources": [
+                {
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Indiagate_(1).jpg",
+                    "size": "small",
+                    "widthPixels": 0,
+                    "heightPixels": 0
+                },
+                {
+                    "url": "http://www.worldfortravel.com/wp-content/uploads/2015/12/Grand-Red-Fort.jpg",
+                    "size": "large",
+                    "widthPixels": 0,
+                    "heightPixels": 0
+                }
+            ]
+        },
+        "textContent": {
+            "title": {
+                "type": "PlainText",
+                "text": "Delhi"
+            },
+            "primaryText": {
+                "type": "PlainText",
+                "text": "Delhi, officially the National Capital Territory of Delhi, is a city and a union territory of India. It is bordered by Haryana on three sides and by Uttar Pradesh to the east."
+            }
+        }
+    }
+}

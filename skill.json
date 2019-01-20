@@ -1,0 +1,45 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Explore different awesome places in India",
+          "examplePhrases": [
+            "Alexa open explore india",
+            ""
+          ],
+          "keywords": [],
+          "name": "Explore India",
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/86ab/dfcce962e2fb42ad83bb9774edeef621/APP_ICON?versionId=AXm_TUNECv7hbioppPZ5fj2y80HrR0VF&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1548078682&Signature=%2Fqay57Oyex4KcS1f0VwU5yxJLy8%3D",
+          "description": "This is a skill which will let you explore awesome places in India with both voice and visual output. It also gives you info and some less known facts about the place.",
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/484e/28b8162dfec54031b5839d8f95eed237/APP_ICON_LARGE?versionId=2y3IpYi0JD4B6ywFfCRgTg3sV09qexMn&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1548078682&Signature=IvEr9eVXwxwovwlBHhpne2urCV4%3D"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "First say \"Alexa open explore india\" and then say \"begin\" after that it will guide you.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "ExploreIndia",
+          "sourceDir": "lambda/us-east-1_ExploreIndia"
+        },
+        "interfaces": [
+          {
+            "type": "ALEXA_PRESENTATION_APL"
+          }
+        ]
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
