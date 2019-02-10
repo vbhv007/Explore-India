@@ -224,11 +224,6 @@
                                             },
                                             {
                                                 "type": "Text",
-                                                "text": "${payload.bodyTemplate3Data.textContent.subtitle.text}",
-                                                "style": "textStylePrimary"
-                                            },
-                                            {
-                                                "type": "Text",
                                                 "text": "${payload.bodyTemplate3Data.textContent.primaryText.text}",
                                                 "paddingTop": 40,
                                                 "style": "textStylePrimary"

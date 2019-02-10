@@ -59,7 +59,7 @@
                         "onPress": {
                             "type": "SendEvent",
                             "arguments": [
-                                "begin"
+                              "${index}"
                             ]
                         }
                     }

@@ -2,7 +2,7 @@
   "deploy_settings": {
     "default": {
       "skill_id": "amzn1.ask.skill.e295bf9f-eb07-45f3-bdb8-6f6de7837d65",
-      "was_cloned": true,
+      "was_cloned": false,
       "merge": {},
       "resources": {
         "manifest": {
@@ -15,15 +15,15 @@
         },
         "lambda": [
           {
-            "arn": "arn:aws:lambda:us-east-1:525780843653:function:ExploreIndia",
-            "awsRegion": "us-east-1",
-            "functionName": "ExploreIndia",
             "alexaUsage": [
               "custom/default"
             ],
-            "revisionId": "8f1f9cc3-9fd5-4a52-82b9-dadcdf301c62",
+            "arn": "arn:aws:lambda:us-east-1:525780843653:function:ExploreIndia",
+            "awsRegion": "us-east-1",
             "codeUri": "lambda/us-east-1_ExploreIndia",
+            "functionName": "ExploreIndia",
             "handler": "index.handler",
+            "revisionId": "4bd0b815-e42b-4b1c-b90f-20ada37306af",
             "runtime": "nodejs8.10"
           }
         ]

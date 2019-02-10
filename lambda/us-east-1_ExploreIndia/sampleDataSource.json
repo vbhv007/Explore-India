@@ -21,7 +21,7 @@
                 }
             ]
         },
-        "title": "Famous places in India."
+        "title": "Famous places in India. Select any by calling the number."
     },
     "PlacesListData": {
         "type": "list",
@@ -133,73 +133,73 @@
                     "token": "mumbai"
                 },
                 {
-					"listItemIdentifier": "chennai",
-                    "ordinalNumber": 4,
-                    "textContent": {
-                        "primaryText": {
-                            "type": "PlainText",
-                            "text": "Chennai"
-                        },
-                        "secondaryText": {
-                            "type": "RichText",
-                            "text": "Known for it's Beaches"
-                        }
-                    },
-                    "image": {
-                        "contentDescription": null,
-                        "smallSourceUrl": null,
-                        "largeSourceUrl": null,
-                        "sources": [
-                            {
-                                "url": "https://res.cloudinary.com/himanshujain/image/upload/v1450644842/activity/marina-beach_kilqy0.jpg",
-                                "size": "small",
-                                "widthPixels": 0,
-                                "heightPixels": 0
-                            },
-                            {
-                                "url": "https://inspirationseek.com/wp-content/uploads/2014/12/Chennai-Hotel-India.jpg",
-                                "size": "large",
-                                "widthPixels": 0,
-                                "heightPixels": 0
-                            }
-                        ]
-                    },
-                    "token": "chennai"
-                },
-                {
-                    "listItemIdentifier": "kolkata",
-                    "ordinalNumber": 5,
-                    "textContent": {
-                        "primaryText": {
-                            "type": "PlainText",
-                            "text": "Kolkata"
-                        },
-                        "secondaryText": {
-                            "type": "RichText",
-                            "text": "Known for its literary, artistic heritage"
-                        }
-                    },
-                    "image": {
-                        "contentDescription": null,
-                        "smallSourceUrl": null,
-                        "largeSourceUrl": null,
-                        "sources": [
-                            {
-                                "url": "https://skymetweather.com/content/wp-content/uploads/2014/11/15264118384bc4c72aec8f1.jpg",
-                                "size": "small",
-                                "widthPixels": 0,
-                                "heightPixels": 0
-                            },
-                            {
-                                "url": "https://im.proptiger.com/6/16/92/kolkata-heroshot-664497.jpeg",
-                                "size": "large",
-                                "widthPixels": 0,
-                                "heightPixels": 0
-                            }
-                        ]
-                    },
-                    "token": "kolkata"
-                }
+                  "listItemIdentifier": "chennai",
+                  "ordinalNumber": 4,
+                  "textContent": {
+                      "primaryText": {
+                          "type": "PlainText",
+                          "text": "Chennai"
+                      },
+                      "secondaryText": {
+                          "type": "RichText",
+                          "text": "Known for it's Beaches"
+                      }
+                  },
+                  "image": {
+                      "contentDescription": null,
+                      "smallSourceUrl": null,
+                      "largeSourceUrl": null,
+                      "sources": [
+                          {
+                              "url": "https://res.cloudinary.com/himanshujain/image/upload/v1450644842/activity/marina-beach_kilqy0.jpg",
+                              "size": "small",
+                              "widthPixels": 0,
+                              "heightPixels": 0
+                          },
+                          {
+                              "url": "https://inspirationseek.com/wp-content/uploads/2014/12/Chennai-Hotel-India.jpg",
+                              "size": "large",
+                              "widthPixels": 0,
+                              "heightPixels": 0
+                          }
+                      ]
+                  },
+                  "token": "chennai"
+              },
+              {
+                  "listItemIdentifier": "kolkata",
+                  "ordinalNumber": 5,
+                  "textContent": {
+                      "primaryText": {
+                          "type": "PlainText",
+                          "text": "Kolkata"
+                      },
+                      "secondaryText": {
+                          "type": "RichText",
+                          "text": "Known for its literary, artistic heritage"
+                      }
+                  },
+                  "image": {
+                      "contentDescription": null,
+                      "smallSourceUrl": null,
+                      "largeSourceUrl": null,
+                      "sources": [
+                          {
+                              "url": "https://skymetweather.com/content/wp-content/uploads/2014/11/15264118384bc4c72aec8f1.jpg",
+                              "size": "small",
+                              "widthPixels": 0,
+                              "heightPixels": 0
+                          },
+                          {
+                              "url": "https://im.proptiger.com/6/16/92/kolkata-heroshot-664497.jpeg",
+                              "size": "large",
+                              "widthPixels": 0,
+                              "heightPixels": 0
+                          }
+                      ]
+                  },
+                  "token": "kolkata"
+              }
             ]
         }
     }

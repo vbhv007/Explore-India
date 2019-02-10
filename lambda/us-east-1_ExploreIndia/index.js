@@ -3,7 +3,7 @@
 
 const Alexa = require('ask-sdk-core');
 const numbers = require('./numbers');
-const noAplSpeechText = 'This is a sample that shows places logs. ' + 
+const noAplSpeechText = 'This is a sample that shows places logs. ' +
                         'Try it on an Echo Show, Echo Spot or Fire TV device.'
 
 const LaunchRequestHandler = {
@@ -36,7 +36,7 @@ const LaunchRequestHandler = {
 };
 
 const BeginIntentHandler = {
-  canHandle(handlerInput) { 
+  canHandle(handlerInput) {
     const request = handlerInput.requestEnvelope.request;
     return request.type === 'IntentRequest' && request.intent.name === 'BeginIntent'
         || request.type === 'Alexa.Presentation.APL.UserEvent' && request.arguments.length > 0 && request.arguments[0] == "begin";
@@ -55,7 +55,7 @@ const BeginIntentHandler = {
 }
 
 const ListItemPressedHandler = {
-  canHandle(handlerInput) { 
+  canHandle(handlerInput) {
     const request = handlerInput.requestEnvelope.request;
     return request.type === 'Alexa.Presentation.APL.UserEvent' && request.arguments.length > 0;
   },
@@ -83,22 +83,22 @@ const GetPlaceByNumberHandler = {
         console.log(`Got Slot number: ${slotValue}`);
         const selectedItem = numbers.ordinalToNumber(slotValue) - 1;
         console.log(`Number resolved to: ${selectedItem}`);
-    
+
         if(isNaN(selectedItem)) {
             return handlerInput.responseBuilder
                             .speak('Sorry, I didn\'t recognize that place, please try again!')
-                            .reprompt('Which place would you like to explore?')        
+                            .reprompt('Which place would you like to explore?')
                             .getResponse();
         }
-    
+
         const numItems = PLACE_DATA.length;
         if(selectedItem > numItems) {
             return handlerInput.responseBuilder
                                .speak('Sorry, I couldn\'t find that place, please say a number between 1 and ' + numItems)
-                               .reprompt('Which place would you like to explore?')        
+                               .reprompt('Which place would you like to explore?')
                                .getResponse();
         }
-    
+
         if(supportsAPL(handlerInput))
         {
             return handlerInput.responseBuilder
@@ -108,7 +108,7 @@ const GetPlaceByNumberHandler = {
                 document: require('./selectedPlace.json'),
                 datasources: createPlaceDataSource.call(this, PLACE_DATA[selectedItem].title, PLACE_DATA[selectedItem].imgSrc, PLACE_DATA[selectedItem].desc)
             })
-            .getResponse();                   
+            .getResponse();
         }
         else
         {
@@ -127,7 +127,7 @@ const GetPlaceByTitleHandler = {
     handle: (handlerInput) => {
         const titleValue = handlerInput.requestEnvelope.request.intent.slots.place.value;
         console.log('placevalue ' + titleValue);
-        
+
         var selectedItem = 0;
         while(selectedItem < PLACE_DATA.length) {
           if (titleValue == PLACE_DATA[selectedItem].name) {
@@ -137,10 +137,10 @@ const GetPlaceByTitleHandler = {
         if (selectedItem == PLACE_DATA.length && titleValue != PLACE_DATA[selectedItem].name) {
             return handlerInput.responseBuilder
                             .speak('Sorry, I didn\'t recognize that place, try again!')
-                            .reprompt('Which place would you like to explore?')        
+                            .reprompt('Which place would you like to explore?')
                             .getResponse();
         }
-        
+
         if(supportsAPL(handlerInput))
         {
             return handlerInput.responseBuilder
@@ -294,10 +294,17 @@ function createPlaceDataSource(title, imgSrc, desc){
         "textContent": {
             "title": {
                 "type": "PlainText",
-                "text": title
+                "text": title,
+                "style": "textStyleBody",
+                "width": "90vw",
+                "textAlign": "center"
             },
             "primaryText": {
                 "type": "PlainText",
+                "paddingTop": 40,
+                "style": "textStylePrimary",
+                "width": "90vw",
+                "textAlign": "center",
                 "text": desc
             }
         }
@@ -311,6 +318,12 @@ const PLACE_DATA = [
     "title": "Delhi",
     "imgSrc": "http://www.worldfortravel.com/wp-content/uploads/2015/12/Grand-Red-Fort.jpg",
     "desc": "Delhi, officially the National Capital Territory of Delhi, is a city and a union territory of India. It is bordered by Haryana on three sides and by Uttar Pradesh to the east."
+  },
+  {
+    "name": "udaipur",
+    "title": "Udaipur",
+    "imgSrc": "https://farm2.staticflickr.com/1580/24313888376_5edb9b82e9_o.jpg",
+    "desc": "Udaipur also known as the 'City of Lakes' is a major city, municipal corporation and the administrative headquarters of the Udaipur district in the Indian state of Rajasthan. It is the historic capital of the kingdom of Mewar in the former Rajputana Agency."
   },
   {
     "name": "mumbai",
@@ -329,12 +342,6 @@ const PLACE_DATA = [
     "title": "Kolkata",
     "imgSrc": "https://im.proptiger.com/6/16/92/kolkata-heroshot-664497.jpeg",
     "desc": "Kolkata is the capital of the Indian state of West Bengal. Located on the east bank of the Hooghly River, it is the principal commercial, cultural, and educational centre of East India, while the Port of Kolkata is India's oldest operating port and its sole major riverine port."
-  },
-  {
-    "name": "udaipur",
-    "title": "Udaipur",
-    "imgSrc": "https://farm2.staticflickr.com/1580/24313888376_5edb9b82e9_o.jpg",
-    "desc": "Udaipur also known as the 'City of Lakes' is a major city, municipal corporation and the administrative headquarters of the Udaipur district in the Indian state of Rajasthan. It is the historic capital of the kingdom of Mewar in the former Rajputana Agency."
   }
 ];
 

@@ -21,7 +21,7 @@
                     {
                         "type": "Video",
                         "source": "https://www.youtube.com/watch?v=77czO8sxABI",
-                        "id": "goodbyeVideo"
+                        "id": "goodbyeVideo",
                         "width": "100vw",
                         "height": "100vh",
                         "position": "absolute"

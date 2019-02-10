@@ -161,7 +161,6 @@
                         {
                             "type": "AlexaHeader",
                             "headerTitle": "${title}",
-                            "headerAttributionImage": "${logo}",
                             "grow": 1
                         },
                         {
@@ -177,7 +176,6 @@
                         },
                         {
                             "type": "Text",
-                            "text": "${ordinal} | ${listLength}",
                             "paddingBottom": "20dp",
                             "color": "white",
                             "spacing": "5dp"
@@ -244,7 +242,7 @@
                             "item": [
                                 {
                                     "type": "FullHorizontalListItem",
-                                    "listLength": "${payload.ExploreIndiaData.listPage.listItems.length}"
+                                    "listLength": "${payload.listTemplate2ListData.listPage.listItems.length}"
                                 }
                             ]
                         }
@@ -265,8 +263,7 @@
                         },
                         {
                             "type": "AlexaHeader",
-                            "headerTitle": "${title}",
-                            "headerAttributionImage": "${logo}"
+                            "headerTitle": "${title}"
                         },
                         {
                             "type": "Sequence",
@@ -282,10 +279,6 @@
                                     "type": "HorizontalListItem"
                                 }
                             ]
-                        },
-                        {
-                            "type": "AlexaFooter",
-                            "footerHint": "${payload.ExploreIndiaData.hintText}"
                         }
                     ]
                 }
@@ -302,7 +295,6 @@
                 "backgroundImage": "${payload.ExploreIndiaData.backgroundImage.sources[1].url}",
                 "title": "${payload.ExploreIndiaData.title}",
                 "hintText": "${payload.ExploreIndiaData.hintText}",
-                "logo": "${payload.ExploreIndiaData.logoUrl}",
                 "listData": "${payload.PlacesListData.listPage.listItems}"
             }
         ]
