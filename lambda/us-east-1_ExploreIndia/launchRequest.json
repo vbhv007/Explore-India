@@ -33,35 +33,6 @@
                         "fontSize": "6vw",
                         "fontWeight": "100",
                         "paddingBottom": "10vh"
-                    },
-                    {
-                        "type": "TouchWrapper",
-                        "width": "19vw",
-                        "height": "9vw",
-                        "item": {
-                            "type": "Frame",
-                            "width": "19vw",
-                            "height": "9vw",
-                            "borderRadius": "5vw",
-                            "borderWidth": "0.75vw",
-                            "borderColor": "#FFFFFF",
-                            "item": {
-                                "type": "Text",
-                                "text": "Begin",
-                                "width": "19vw",
-                                "height": "9vw",
-                                "fontWeight": "100",
-                                "fontSize": "4vw",
-                                "textAlign": "center",
-                                "textAlignVertical": "center"
-                            }
-                        },
-                        "onPress": {
-                            "type": "SendEvent",
-                            "arguments": [
-                              "${index}"
-                            ]
-                        }
                     }
                 ]
             }
